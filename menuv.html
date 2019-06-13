@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+.navigation {
+  width: 300px;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.mainmenu a {
+  display: block;
+  background-color: #CCC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+.submenu a {
+  background-color: #999;
+}
+
+.submenu a:hover {
+  background-color: #666;
+}
+
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navigation">
+  <ul class="mainmenu">    
+    <li><a href="">1</a>
+    	<ul class="submenu">
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+      </ul>
+    </li>
+    
+    <li><a href="">2</a>
+      <ul class="submenu">
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+      </ul>
+    </li>
+    <li><a href="">3</a>
+    	<ul class="submenu">
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+        <li><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/></li>
+      </ul>
+    </li>
+   
+  </ul>
+</nav>
+</body>
+</html>

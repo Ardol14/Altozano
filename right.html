@@ -1,0 +1,389 @@
+<html>	
+<head>
+<meta charset="utf-8">
+ <meta HTTP-EQUIV="Refresh"     CONTENT="10; URL=index.html">
+<style type="text/css">
+.{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#header{
+  margin:auto;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.nav li a{
+background:black ;
+color:white;
+text-decoration: none;
+padding: 10px 15px;
+display:block;
+}
+
+.nav li a:hover{
+  background-color:;
+}
+
+nav>li{
+  float: left;
+
+}
+
+.nav li ul{
+display: none;  
+position: absolute;
+min-width: 140px;
+}
+
+
+body {cursor : pointer} 
+
+
+input[type='radio']:checked+span{
+color: white;
+}
+
+
+label{
+	color: #08088A;
+}
+
+
+input[type=radio]{
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+}
+input[type=radio] + label:before{
+  height:12px;
+  width:12px;
+  margin-right: 2px;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  border:1px solid #777;
+}
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before{
+  background:orange;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+input[type=radio] + label:before{
+  border-radius:50%;
+}
+input[type=checkbox] + label:before{
+  border-radius:2px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+label{
+	font-family: verdana;
+}
+
+legend{
+	font-family: verdana;
+}
+
+body{
+  background:#a0bbae; 
+  position:absolute;
+  width:315px;
+}
+
+
+fieldset{
+  width: 200px;
+  margin-left:20%;
+}
+.d{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        height: 600px;
+    width: 1200px;
+    border:none;
+    border-color: white;
+        z-index: 2;
+    }
+
+ </style>
+
+</head>
+
+
+<body>
+
+
+
+<div style= "position:center; width:200px; height:300px;">
+<img src="enca.jpg">
+</div>
+
+<fieldset style="border-color:white;  margin-top:10%; ">
+ <legend><font color="white">TIENDAS ANCLA</font></legend>
+
+<div style="position:center; height:200px; width:90%;  overflow-y:scroll; padding: 10px;">
+
+<input type="radio" name="Alto" id="Adidas" value="Adidas" onclick="myFunction1()"> <label for="Adidas">Adidas Originals </label> <br/>
+<input type="radio" name="Alto" id="Banamex" value="Banamex"> <label for="Banamex" onclick="myFunction()">Banamex</label> <br/>
+<input type="radio" name="Alto" id="Bancomer" value="Bancomer"> <label for="Bancomer" onclick="myFunction1()">BBVA Bancomer</label> <br/>
+<input type="radio" name="Alto" id="Benetton" value="Benetton"> <label for="Benetton" onclick="myFunction()">Benetton</label> <br/>
+<input type="radio" name="Alto" id="Best" value="Best"> <label for="Best" onclick="myFunction1()">Best Buy</label> <br/>
+<input type="radio" name="Alto" id="Bobois" value="Bobois"> <label for="Bobois" onclick="myFunction1()">Bobois</label> <br/>
+<input type="radio" name="Alto" id="Cinemex" value="Cinemex"> <label for="Cinemex" onclick="myFunction2()">Cinemex</label> <br/>
+<input type="radio" name="Alto" id="Dportenis" value="Dportenis"> <label for="Dportenis" onclick="myFunction1()">Dportenis</label> <br/>
+<input type="radio" name="Alto" id="ETN" value="ETN"> <label for="ETN" onclick="myFunction1()">ETN</label> <br/>
+<input type="radio" name="Alto" id="F21" value="F21"> <label for="F21" onclick="myFunction1()">F21</label> <br/>
+<input type="radio" name="Alto" id="Flexi" value="Flexi" onclick="myFunction()1"> <label for="Flexi">Flexi</label> <br/>
+<input type="radio" name="Alto" id="Gamers" value="Gamers" onclick="myFunction()"> <label for="Gamers">Gamers</label> <br/>
+<input type="radio" name="Alto" id="GMC" value="GMC"> <label for="GMC">GMC</label> <br/>
+<input type="radio" name="Alto" id="HM" value="HM"> <label for="HM">H&M</label> <br/>
+<input type="radio" name="Alto" id="Honda" value="Honda"> <label for="Honda">Honda</label> <br/>
+<input type="radio" name="Alto" id="Ivonne" value="Ivonne"> <label for="Ivonne">Ivonne</label> <br/>
+<input type="radio" name="Alto" id="" value="Liverpool"> <label for="Liverpool">Liverpool</label><br/>
+<input type="radio" name="Alto" id="Mac" value="Mac"> <label for="Mac">Mac store</label> <br/>
+<input type="radio" name="Alto" id="Marsel" value="Marsel"> <label for="Marsel">Marsel</label> <br/>
+<input type="radio" name="Alto" id="Marti" value="Marti"> <label for="Marti">Marti</label> <br/>
+<input type="radio" name="Alto" id="Nissan" value="Nissan"> <label for="Nissan">Nissan Acueducto</label> <br/>
+<input type="radio" name="Alto" id="" value=""> <label for=""></label> <br/>
+</div>
+</fieldset>
+
+
+<fieldset style="  margin-top:3%; border-color:white;">
+ <legend><font color="white">TIENDAS</font></legend>
+
+<div style="width:90%; height:200px;  overflow-y:scroll; padding: 10px;">
+<input type="radio" name="Alto" id="Adolfo" value="Adolfo" onclick="myFunction()"> <label for="Adolfo">Adolfo Dominguez</label> <br/>
+<input type="radio" name="Alto" id="Altozano" value="Altozano"> <label for="Altozano">Altozano la Nueva Morelia</label> <br/>
+<input type="radio" name="Alto" id="Bizzarro" value="Bizzarro"> <label for="Bizzarro">Bizzarro</label> <br/>
+<input type="radio" name="Alto" id="Body" value="Body"> <label for="Body">Body Brite</label> <br/>
+<input type="radio" name="Alto" id="Capilla" value="Capilla"> <label for="Capilla">Capilla "María Inmaculada de la Salud"</label> <br/>
+<input type="radio" name="Alto" id="Casa" value="Casa"> <label for="Casa">Casa Carcasa (isla)</label> <br/>
+<input type="radio" name="Alto" id="Crochet" value="Crochet"> <label for="Crochet">Crochet</label> <br/>
+<input type="radio" name="Alto" id="Espinosa" value="Espinosa"> <label for="Espinosa">Daniel Espinosa</label> <br/>
+<input type="radio" name="Alto" id="Depelite" value="Depelite"> <label for="">Depilité</label> <br/>
+<input type="radio" name="Alto" id="" value=""> <label for=""></label> <br/>
+<input type="radio" name="Alto" id="" value=""> <label for=""></label> <br/>
+
+</div>
+</fieldset>
+
+
+<fieldset style=" margin-top:3%; border-color:white; ">
+ <legend><font color="white">RESTAURANTES</font></legend>
+
+<div style="position:center; height:200px; width:90%;  overflow-y:scroll; padding: 10px;">
+<input type="radio" name="Alto" id="Asador" value="Asador"> <label for="Asador">Asador de Bariloche</label> <br/>
+<input type="radio" name="Alto" id="Burguer" value="Burguer"> <label for="Burguer">Burguer king</label> <br/>
+<input type="radio" name="Alto" id="Carls" value="Carls"> <label for="Carls">Carl's Jr</label> <br/>
+<input type="radio" name="Alto" id="Comicx" value="Comicx"> <label for="Comicx">Comicx</label> <br/>
+<input type="radio" name="Alto" id="Delicrepe" value="Delicrepe"> <label for="Delicrepe">Delicrepe</label> <br/>
+<input type="radio" name="Alto" id="Dominos" value="Dominos"> <label for="Dominos">Domino's Pizza</label> <br/>
+<input type="radio" name="Alto" id="Globo" value="Globo"> <label for="Globo">El Globo</label> <br/>
+<input type="radio" name="Alto" id="Fisher" value="Fisher"> <label for="Fisher">Fisher's</label> <br/>
+<input type="radio" name="Alto" id="GNC" value="GNC"> <label for="GNC">GNC</label> <br/>
+<input type="radio" name="Alto" id="IHOP" value="IHOP"> <label for="IHOP">IHOP</label> <br/>
+<input type="radio" name="Alto" id="Gelato" value="Gelato"> <label for="Gelato">IL Gelato Di Luca</label> <br/>
+<input type="radio" name="Alto" id="Inn" value="Inn"> <label for="Inn">Inn Salata Express</label> <br/>
+<input type="radio" name="Alto" id="Cueva" value="Cueva"> <label for="Cueva">La Cueva de Chucho</label> <br/>
+<input type="radio" name="Alto" id="Lilian" value="Lilian"> <label for="Lilian">Lilian's Coffees</label> <br/>
+<input type="radio" name="Alto" id="Manhattan" value="Manhattan"> <label for="Manhattan">Manhattan & Blue Bell</label> <br/>
+<input type="radio" name="Alto" id="Moyo" value="Moyo"> <label for="Moyo">Moyo</label> <br/>
+<input type="radio" name="Alto" id="Nutrisa" value="Nutrisa"> <label for="Nutrisa">Nutrisa</label> <br/>
+<input type="radio" name="Alto" id="Mingos" value="Mingos"> <label for="Mingos">Mingos</label> <br/>
+<input type="radio" name="Alto" id="Starbucks" value="Starbucks"> <label for="Starbucks">Starbucks</label> <br/>
+<input type="radio" name="Alto" id="Taste" value="Taste"> <label for="Taste">Taste Top Donuts</label> <br/>
+<input type="radio" name="Alto" id="Texas" value="Texas"> <label for="Texas">Texas Ribs</label> <br/>
+<input type="radio" name="Alto" id="Unagi" value="Unagi"> <label for="Unagi">Unagi</label> <br/>
+</div>
+</fieldset>
+
+<div id="header">
+
+<ul class="nav">
+  <li>Tiendas Ancla
+    <ul>
+<li><a href="">submenu1</a></li>
+<li><a href="">submenu2</a></li>
+<li><a href="">submenu3</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<script>
+
+function func1N3() {
+    window.open("N1.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");    
+}
+
+function myFunction() {
+    window.open("left.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function myFunction1() {
+    window.open("N1.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function myFunction2() {
+    window.open("N2.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+</script>
+
+<div>
+<section id="main-content" class="container">
+<!-- Start Page Content -->
+<div class="row-wrapper-x"><span class="acc-trigger "><a href="#"><strong>Agencia de Autos</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><input type="radio" name="Alto" id="Adidas" value="Adidas" onclick="myFunction1()"> <label for="Adidas">Adidas Originals </label> <br/></p>
+<p><strong><a href="http://paseoaltozano.com/nissan-acueducto/ ‎">Nissan<br />
+</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/gm/">GM</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/peugeot">Peugeot</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/toyota">Toyota</a></strong></p>
+<p><strong><a href="http:/paseoaltozano.com/vw">VW</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Deportes</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/dportenis/">Dportenis</a><a href="http://paseoaltozano.com/dpstreet/"><br />
+</a><a href="http://paseoaltozano.com/marti" target="_blank">Martí</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Cafetería y Heladería</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/delicrepe/">Delicrepe<br />
+</a></strong><strong><a href="http://paseoaltozano.com/lilians-coffees/" target="_blank">Manhattan<br />
+Lilian&#8217;s Coffees<br />
+</a><a href="http://paseoaltozano.com/moyo" target="_blank">Moyo<br />
+</a><a href="http://paseoaltozano.com/nutrisa">Nutrisa<br />
+</a><a href="http://paseoaltozanocom/starbucks">Starbucks<br />
+</a></strong><strong><a href="http://paseoaltozano.com/taste-top-donuts/" target="_blank">Taste Top Donuts<br />
+</a><a href="http://paseoaltozano.com/el-globo-2/ ‎">El Globo</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Calzado</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/flexi/">Flexi</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/hills-collection/">Hill&#8217;s Collections</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Entretenimiento</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/the-monkey-bar-bowl/">The Monkey Bar &amp; Bowl<br />
+</a><a href="http://paseoaltozano.com/cinemex/">Cinemex<br />
+</a><a href="http://paseoaltozano.com/gamers/" target="_blank">Gamers<br />
+</a></strong><strong><a href="http://paseoaltozano.com/jump-it-up">Jump it up</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Joyería y Accesorios</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/bizarro/">Bizarro</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/crochet/">Crochet</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/daniel-espinosa/">Daniel Espinosa</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Moda</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/intimissimi-calzedonia/">Intimissimi Calzedonia</a></strong></p>
+<p><a href="http://paseoaltozano.com/united-colors-of-benetton/"><strong>Benetton</strong></a></p>
+<p><strong><a href="http://paseoaltozano.com/fiorentina/">Fiorentina</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/lob/">LOB</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/adidas-originals/">Adidas Originals</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/adolfo-dominguez/">Adolfo Dominguez</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/bobois/">Bobois<br />
+</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/forever-21/">Forever 21</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/guess/">Guess</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/hm/">H&amp;M</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/ivonne" target="_blank">Ivonne<br />
+</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/marsel" target="_blank">Marsel<br />
+</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/nicole-lee">Nicole Lee<br />
+</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/pepe-jeans" target="_blank">Pepe Jeans</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/piky-accesorios">Piky Accesorios<br />
+</a></strong></p>
+<p><strong><a href="http:/paseoaltozano.com/studio-f">Studio F</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/todo-moda">Todo Moda</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/Tommy-Hilfiger">Tommy Hilfiger</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Restaurantes</strong></a></span><div class="acc-container"><article class="content"><p>
+<strong><a href="http://paseoaltozano.com/comicx/">Comicx</a></strong><br />
+<strong><a href="http://paseoaltozano.com/fishers/">Fisher&#8217;s</a></strong><br />
+<strong><a href="http://paseoaltozano.com/sanborns/">Sanborns</a></strong><br />
+<strong><a href="http://paseoaltozano.com/texas-ribs/">Texas Ribs<br />
+</a><a href="http://paseoaltozano.com/asador-de-bariloche/">Asador Bariloche<br />
+</a><a href="http://paseoaltozano.com/burger-king/">Burger King<br />
+</a><a href="http://paseoaltozano.com/carls-jr/">Carl&#8217;s Jr<br />
+</a><a href="http://paseoaltozano.com/city-tortas/">City Tortas<br />
+</a><a href="http://paseoaltozano.com/dominos-pizza/">Dominos Pizza<br />
+</a><a href="http://paseoaltozano.com/inn-salata-express/">Inn Salata Express</a><a href="http://paseoaltozano.com/green-grass/"><br />
+</a><a href="http://paseoaltozano.com/la-cueva-de-chucho" target="_blank">La Cueva de Chucho<br />
+</a><a href="http://paseoaltozano.com/unagi">Unagi</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Tecnología</strong></a></span><div class="acc-container"><article class="content"><p>
+<strong><a href="http://paseoaltozano.com/macstore/">MacStore</a></strong><br />
+<strong><a href="http://paseoaltozano.com/telcel/">Telcel<br />
+</a><a href="http://paseoaltozano.com/best-buy/">BestBuy</a> </strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Salud y Belleza</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/Goc-Make-Up/">Goc Make Up</a></strong><br />
+<strong><a href="http://paseoaltozano.com/Mac-Cosmetics/">Mac Cosmetics</a></strong><br />
+<strong> <a href="http://paseoaltozano.com/opticas-kauffman/">Ópticas kauffman</a></strong><br />
+<strong> <a href="http://paseoaltozano.com/opticas-lux">Ópticas Lux</a></strong><br />
+<strong> <a href="http://paseoaltozano.com/Sally-Beauty-Supply/">Sally Beauty Supply<br />
+</a><a href="http://paseoaltozano.com/body-brite/">Body Brite<br />
+</a><a href="http://paseoaltozano.com/dr-edmundo-javier-plauchu-alcantara/" target="_blank">Depilité<br />
+Dr. Edmundo Javier Plauchú Alcántara</a></strong><strong><a href="http://paseoaltozano.com/sunglass-hut" target="_blank"><br />
+Sunglass Hut </a></strong><br />
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Tiedas departamentales</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/sears/">Sears<br />
+</a><a href="http://paseoaltozano.com/liverpool">Liverpool</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Bienes Raíces</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/altozano-la-nueva-morelia/">Altozano La Nueva Morelia</a></strong></p>
+</p></article></div>
+<p>&nbsp;</p>
+<span class="acc-trigger "><a href="#"><strong>Juguetería</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/distroller/">Distroller</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/julio-cepeda-jugueterias/" target="_blank">Julio Cepeda</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Servicios</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong><a href="http://paseoaltozano.com/capilla-maria-inmaculada-de-la-salud">Capilla Religiosa<br />
+</a><a href="http://paseoaltozano.com/etn/">ETN</a></strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Perfumería</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><strong>&#8211;</strong></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Librería</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><b><a href="http://paseoaltozano.com/porrua">Porrúa</a></b></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Hoteles</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><a href="http://paseoaltozano.com/real-inn"><b>Real Inn</b></a></p>
+</p></article></div>
+<span class="acc-trigger "><a href="#"><strong>Bancos</strong></a></span><div class="acc-container"><article class="content"><p>
+<p><b><a href="http://paseoaltozano.com/santander">Santander</a></b></p>
+<p><strong><a href="http://paseoaltozano.com/banamex/">Banamex</a></strong></p>
+<p><strong><a href="http://paseoaltozano.com/bbva-bancomer/">BBVA BANCOMER</a></strong></p>
+</p></article></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</section>
+
+</div>
+</body>
+</html>

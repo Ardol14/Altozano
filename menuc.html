@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.oculto {display:none}
+</style>
+</head>
+<body>
+
+<a onclick="mostrar(1)">Agencia de autos</a><br>
+<div id="1" class="oculto">
+<input type="radio" name="Alto" id="R-1N-05b4" onclick="R1N05b4()"> <label for="R-1N-05b4">Honda</label> <br/> 
+<input type="radio" name="Alto" id="R-1N-05b2" onclick="R1N05b2()"> <label for="R-1N-05b2">GM</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b5" onclick="R1N05b5()"> <label for="R-1N-05b5">Peugeot</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b3" onclick="R1N05b3()"> <label for="R-1N-05b3">Toyota</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b1" onclick="R1N05b1()"> <label for="R-1N-05b1">VW</label> <br/>
+</div>
+  
+<a onclick="mostrar(2)">Bancos</a><br>
+<div id="2" class="oculto">
+<input type="radio" name="Alto" id="PB-09b" onclick="fPB09b()"> <label for="PB-09b" >Banamex</label> <br/>
+<input type="radio" name="Alto" id="SA-N1-03A" onclick="SAN103A()"> <label for="SA-N1-03A" >Bancomer</label> <br/>
+<input type="radio" name="Alto" id="1N-48" onclick="f1N48()"> <label for="1N-48">Santander</label> <br/>
+</div>
+
+  <a onclick="mostrar(3)">Bienes Raíces</a><br>
+<div id="3" class="oculto">
+<input type="radio" name="Alto" id="Altozano" value="Altozano"> <label for="Altozano">Altozano la Nueva Morelia</label> <br/>
+</div>
+
+<a onclick="mostrar(4)">Cafetería y Heladeria</a><br>
+<div id="4" class="oculto">
+<input type="radio" name="Alto" id="1N-49a" onclick="f1N49a()"> <label for="1N-49a">El Globo</label> <br/>
+<input type="radio" name="Alto" id="1N-51" onclick="f1N51()"> <label for="1N-51">Nutrisa</label> <br/>
+<input type="radio" name="Alto" id="Starbucks" value="Starbucks"> <label for="Starbucks">Starbucks</label> <br/>
+</div>
+
+
+<a onclick="mostrar(5)">Calzado</a><br>
+<div id="5" class="oculto">
+<input type="radio" name="Alto" id="1N-47" onclick="f1N47()"> <label for="1N-47">Flexi</label> <br/>
+<input type="radio" name="Alto" id="1N-50A" onclick="f1N50A()"> <label for="1N-50A">Hill´s Collection</label> <br/>
+</div>
+
+
+    <a onclick="mostrar(6)">Deportes</a><br>
+<div id="6" class="oculto">
+<input type="radio" name="Alto" id="1N-43" onclick="f1N43()"> <label for="1N-43" >Dportenis</label> <br/>
+<input type="radio" name="Alto" id="PB-02" value="fPB02()"> <label for="PB-02">Marti</label> <br/>
+</div>
+    
+<a onclick="mostrar(7)">Entenimiento</a><br>
+<div id="7" class="oculto">
+<input type="radio" name="Alto" id="Cinemex" > <label for="Cinemex" onclick="Cinemex()">Cinemex</label> <br/>
+<input type="radio" name="Alto" id="PB-11b" onclick="fPB11b()"> <label for="PB-11b">Gamers</label> <br/>
+<input type="radio" name="Alto" id="1N-8" onclick="f1N8()"> <label for="1N-8">Jump it up</label> <br/>
+<input type="radio" name="Alto" id="SA-2N-01" onclick="fSA2N01()"> <label for="SA-2N-01">The Monkey</label> <br/>
+ </div>
+
+<a onclick="mostrar(8)">Hoteles</a><br>
+<div id="8" class="oculto">
+<input type="radio" name="Alto" id="Hotel" onclick="Hotel_Real()"> <label for="Hotel">Hotel Real Inn</label> <br/>
+</div>
+
+<a onclick="mostrar(9)">Jugueteria</a><br>
+<div id="9" class="oculto">
+<input type="radio" name="Alto" id="1N-19a" onclick="f1N19a()"> <label for="1N-19a">Distroller</label> <br/>
+<input type="radio" name="Alto" id="2N-06-07-08-09" onclick="f2N06070809()"> <label for="2N-06-07-08-09">Julio Cepeda Jugueteria</label> <br/>
+</div>
+
+<a onclick="mostrar(10)">Joyeria y Accesorios</a><br>
+<div id="10" class="oculto">
+<input type="radio" name="Alto" id="1N-62" onclick="f1N62()"> <label for="1N-62">Bizzarro</label> <br/>
+<input type="radio" name="Alto" id="1N-60" onclick="f1N60()"> <label for="1N-60">Crochet</label> <br/>
+<input type="radio" name="Alto" id="PB-06" onclick="fPB06()"> <label for="PB-06">Daniel Espinosa</label> <br/>
+</div>
+
+<a onclick="mostrar(11)">Libreria</a><br>
+<div id="11" class="oculto">
+<input type="radio" name="Alto" id="PB-08" onclick="fPB08()"> <label for="PB-08">Porrua</label> <br/>
+</div>
+
+<a onclick="mostrar(12)">Moda</a><br>
+<div id="12" class="oculto">
+<input type="radio" name="Alto" id="1N-4" onclick="f1N4()"> <label for="1N-4">Baby Upscale</label> <br/>
+<input type="radio" name="Alto" id="1N-78" onclick="f1N78()"> <label for="1N-78">Bobois</label> <br/>
+<input type="radio" name="Alto" id="1N-61" onclick="f1N61()"> <label for="1N-61">Intimissimi Calzedonia</label> <br/>
+<input type="radio" name="Alto" id="PB-02a" onclick="fPB02a()"> <label for="PB-02a">Fiorentina</label> <br/>
+<input type="radio" name="Alto" id="1N-17" onclick="f1N17()"> <label for="1N-17">LOB</label> <br/>
+<input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/>
+<input type="radio" name="Alto" id="PB-16a" onclick="fPB16a()"> <label for="PB-16a">Adolfo Dominguez</label> <br/>
+<input type="radio" name="Alto" id="F21" onclick="Forever_21()"> <label for="F21">Forever 21</label> <br/>
+<input type="radio" name="Alto" id="PB-03" onclick="fPB03()"> <label for="PB-03">Guess</label> <br/>
+<input type="radio" name="Alto" id="HM" onclick="HM()"> <label for="HM">H&M</label> <br/>
+<input type="radio" name="Alto" id="1N-18" onclick="f1N18()"> <label for="1N-18">Ivonne</label> <br/>
+<input type="radio" name="Alto" id="1-N3" onclick="f1N3()"> <label for="1N-3">Marsel</label> <br/>
+<input type="radio" name="Alto" id="PB-01" onclick="fPB01()"> <label for="PB-01">Nicole Lee</label> <br/>
+<input type="radio" name="Alto" id="PB-07" onclick="fPB07()"> <label for="PB-07">Pepe Jeans</label> <br/>
+<input type="radio" name="Alto" id="1N-7" onclick="f1N7()"> <label for="1N-7">Piky Accesories</label> <br/>
+<input type="radio" name="Alto" id="PB-04-05" onclick="fPB0405()"> <label for="PB-04-05">Studio F</label> <br/>
+<input type="radio" name="Alto" id="PB-15" onclick="fPB15()"> <label for="PB-15">Tommy Hilfiger</label> <br/>
+</div>
+
+<a onclick="mostrar(13)">Restaurantes</a><br>
+<div id="13" class="oculto">
+<input type="radio" name="Alto" id="2N-25" onclick="f2N25()"> <label for="2N-25">Asador de Bariloche</label> <br/>
+<input type="radio" name="Alto" id="FC-08a" onclick="fFC08a()"> <label for="FC-08a">Burguer king</label> <br/>
+<input type="radio" name="Alto" id="2N-19-20-21" onclick="f2N192021()"> <label for="2N-19-20-21">Carl's Jr</label> <br/>
+<input type="radio" name="Alto" id="2N-14-15" onclick="f2N1415()"> <label for="2N-14-15">Comicx</label> <br/>
+<input type="radio" name="Alto" id="FC-10a" onclick="fFC10a()"> <label for="FC-10a">Domino's Pizza</label> <br/>
+<input type="radio" name="Alto" id="2N-33" onclick="f2N33()"> <label for="2N-33">Fisher's</label> <br/>
+<input type="radio" name="Alto" id="PB-17-18" onclick="fPB1718()"> <label for="PB-17-18">IHOP</label> <br/>
+<input type="radio" name="Alto" id="Gelato" value="Gelato"> <label for="Gelato">IL Gelato Di Luca</label> <br/>
+<input type="radio" name="Alto" id="Inn" value="Inn"> <label for="Inn">Inn Salata Express</label> <br/>
+<input type="radio" name="Alto" id="FC-09" onclick="fFC09()"> <label for="FC-09">La Cueva de Chucho</label> <br/>
+<input type="radio" name="Alto" id="PB-11" onclick="fPB11()"> <label for="PB-11">Lilian's Coffees</label> <br/>
+<input type="radio" name="Alto" id="Mingos" value="Mingos"> <label for="Mingos">Mingos</label> <br/>
+<input type="radio" name="Alto" id="2N-37" onclick="f2N37()"> <label for="2N-37">Texas Ribs</label> <br/>
+<input type="radio" name="Alto" id="2N-29" onclick="f2N29()"> <label for="2N-29">Unagi</label> <br/>
+</div>
+
+<a onclick="mostrar(14)">Salud y Belleza</a><br>
+<div id="14" class="oculto">
+<input type="radio" name="Alto" id="PB-09" onclick="fPB09()"> <label for="PB-09">Mac Cosmetics</label> <br/>
+<input type="radio" name="Alto" id="1N-51a" onclick="f1N51a()"> <label for="1N-51a">Ópticas Lux</label> <br/>
+<input type="radio" name="Alto" id="1N-50B" onclick="f1N50B()"> <label for="1N-50B">Ópticas Kauffman</label> <br/>
+<input type="radio" name="Alto" id="1N-" onclick="f1N4()"> <label for="1N-">Body Brite</label> <br/>
+</div>
+
+<a onclick="mostrar(15)">Servicios</a><br>
+<div id="15" class="oculto">
+<input type="radio" name="Alto" id="1N-26a" onclick="f1N26a()"> <label for="1N-26a">Capilla "María Inmaculada de la Salud"</label> <br/>
+<input type="radio" name="Alto" id="ETN" value="ETN"> <label for="ETN" onclick="myFunction1()">ETN</label> <br/>
+</div>
+
+<a onclick="mostrar(16)">Tecnologia</a><br>
+<div id="16" class="oculto">
+<input type="radio" name="Alto" id="Best_Buy" onclick="Best_Buy()"> <label for="Best_Buy">Best Buy</label> <br/>
+<input type="radio" name="Alto" id="PB-09a" onclick="fPB09a()"> <label for="PB-09a">Mac store</label> <br/>
+<input type="radio" name="Alto" id="1N-5A" onclick="f1N5A()"> <label for="1N-5A">Telcel</label> <br/>
+</div>
+
+<a onclick="mostrar(17)">Tiendas departamentales</a><br>
+<div id="17" class="oculto">
+<input type="radio" name="Alto" id="Liverpool" onclick="Liverpool()"> <label for="Liverpool">Liverpool</label><br/>
+<input type="radio" name="Alto" id="Sears" onclick="Sears()"> <label for="Sears">Sears</label> <br/>
+</div>
+
+
+<script>
+var visto = null;
+function mostrar(num) {
+  obj = document.getElementById(num);
+  obj.style.display = (obj==visto) ? 'none' : 'block';
+  if (visto != null)
+    visto.style.display = 'none';
+  visto = (obj==visto) ? null : obj;
+}
+</script>
+</body>
+</html>

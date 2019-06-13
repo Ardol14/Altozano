@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>Paseo altozano</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style type="text/css">
+	
+
+
+
+
+	button {
+     width: 50px;
+     height: 50px;
+     text-aling:center;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: red;
+     margin-top:10px;
+
+}
+
+
+
+
+
+.f{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        height: 600px;
+    width: 1200px;
+    border:none;
+    border-color: white;
+        z-index: 1;
+    }
+
+    .o{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        height: 600px;
+    width: 1200px;
+    border:none;
+    border-color: white;
+        z-index: 2;
+    }
+
+.d{
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        height: 600px;
+    width: 1200px;
+    border:none;
+    border-color: white;
+        z-index: 2;
+    }
+
+a{
+font-family: red serifs;
+font-weight: bold;
+font-size: 15px;
+color:#088A85; 
+font-family: verdana;
+}
+
+.mySlides {display:none;}
+	</style>
+</head>
+
+<body>
+
+
+<div style="height:80%">
+
+     <div style="height:90px; width:150px; margin-top:10px;">
+	
+     <button type="button" disabled>
+<center><b>N2</b></center>
+</button>
+<a><-Estas</a><br>
+<a><font color="white">-----------</font>aqui</a>
+ <button type="button" onclick="myFunction1()">
+<center><b>N1</b></center>
+</button>
+<br>
+ <button type="button" onclick="myFunction()">
+<center><b>PB</b></center>
+</button>
+
+</div>
+
+</div>
+
+<img class="f" src="fondon2.png" border="none">
+<img class="o" src="serviciosn2.png" border="none">
+<img class="d" src="" border="none">
+
+<div class="w3-content" style="width:100%;margin-top:10px;">
+
+<img class="mySlides" src="fot.jpg" style="height:110px; width:100%">
+<img class="mySlides" src="foot.jpg" style="height:110px; width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function myFunction1() {
+    window.open("N1.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function myFunction() {
+    window.open("left.html", "left", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+</script>
+
+
+
+
+</body>
+</html>

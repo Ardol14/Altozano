@@ -1,0 +1,1334 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Pruebas</title>
+	<meta charset="utf-8"/>
+ <meta HTTP-EQUIV="Refresh"     CONTENT="30; URL=menus.html">
+ <meta name="viewport" content="width=device−width, initial−scale=1.0" />
+     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style >
+
+		#section{
+		width: 70%;
+		height: 100%;
+		float: left;
+		padding: 10px;
+		
+	}
+
+	#section label{
+font-family: red serifs;
+font-weight: bold;
+font-size: 15px;
+color:#088A85; 
+font-family: verdana;
+}
+
+	/*#aside{
+		background-color: #a0bbae;
+		height: 100%;
+		width: 25%;
+		float: right;
+		padding: 5px;
+		overflow: scroll;
+	}*/
+
+
+
+
+button {
+     width: 50px;
+     height: 50px;
+     text-aling:center;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: red;
+     margin-top:10px;
+
+}
+
+
+
+
+ 
+    
+
+
+
+a{
+font-family: red serifs;
+font-weight: bold;
+font-size: 15px;
+color:#088A85; 
+font-family: verdana;
+
+}
+
+.mySlides {display:none;}
+
+#aside input[type='radio']:checked+span{
+color: white;
+}
+
+
+#aside label{
+	color: #08088A;
+}
+
+
+#aside input[type=radio]{
+  /* Hide original inputs */
+  visibility: hidden;
+ 
+}
+#aside input[type=radio] + label:before{
+  height:12px;
+  width:12px;
+  margin-right: 2px;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  border:1px solid #777;
+}
+#aside input[type=radio]:checked + label:before{
+  background:orange;
+}
+
+#aside input[type=checkbox]:checked + label:before{
+  background:orange;
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+#aside input[type=radio] + label:before{
+  border-radius:50%;
+   z-index:40;  
+}
+#aside input[type=checkbox] + label:before{
+  border-radius:2px;
+
+}
+
+
+#aside ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+#aside ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+#aside ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#aside label{
+	font-family: verdana;
+
+}
+
+#aside legend{
+	font-family: verdana;
+}
+#aside fieldset{
+  border-color:white;    
+  width: 250px;
+  margin-left:10%;
+  text-align: left;
+}
+
+.navigation {
+  width: 100px;
+}
+
+
+
+.oculto {
+  display:none; 
+  margin: 10px;
+  border: 10px;
+  border-color: black;
+}
+
+
+
+
+
+.f{
+        position: absolute;
+        left: 60px;
+        top: 30px;        
+    border:0px;
+    border-color: white;
+        z-index: 1;
+    }
+
+    .d{
+        position: absolute;
+        left: 60px;
+        top: 30px;        
+    border:0px;
+    border-color: white;
+        z-index: 3;
+    }
+    .o{
+        position: absolute;
+        left: 60px;
+        top: 30px;       
+    border:0px;
+    border-color: white;
+        z-index: 2;
+    }
+
+
+@media(max-width: 600px){
+     .f{
+          width: 10px !important;
+          height:10px !important;
+
+     }
+
+     .d{
+          width: 10px !important;
+          height:10px !important;
+
+     }  
+  .o{
+          width: 10px !important;
+          height:10px !important;
+
+     }
+
+}
+
+@media(max-width: 600px){
+     
+}
+
+@media(max-width: 600px){
+     
+}
+
+
+
+@media(max-width: 720px){
+     .f{
+          width: 10px !important;
+          height:10px !important;
+     }
+
+      .d{          
+          
+           width: 10px !important;
+          height:10px !important;
+     }
+
+     .o{
+           
+            width: 10px !important;
+          height:10px !important;
+     }
+
+     #aside{
+      height: 100% !important;
+     }
+}
+
+
+
+@media(max-width: 1920px){
+     .f{
+          height: 600px !important;
+    width: 1000px !important;
+     }
+
+      .d{          
+          height: 600px !important;
+    width: 1000px !important;
+     }
+
+     .o{
+           height: 600px !important;
+    width: 895px !important;
+     }
+}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="section" >
+	<div style="height:80%">
+
+     <div style="height:90px; width:150px; ">
+	
+     <button type="button" onclick="cambiar2()">
+<center><b>N2</b></center>
+</button>
+<label id="lbl2"></label>
+<font color="white">---------------</font><label id="lbl2.1"></label><br>
+
+ <button type="button" onclick="cambiar1()">
+<center><b>N1</b></center>
+</button>
+<label id="lbl1"></label>
+<font color="white">---------------</font><label id="lbl1.1"></label><br>
+
+ <button type="button" onclick="cambiar()">
+<center><b>PB</b></center> 
+</button> 
+<label id="lbl"><-Estas</label>
+<font color="white">---------------</font><label id="lbl.1">aqui</label></label>
+
+
+
+</div>
+
+</div>
+
+
+<img class="f" src="fondpb.png" id="capa1">
+<img class="d" src="serviciospb.png"  id="capa2">
+<img class="o" src="" id="capa3">
+
+
+
+<div class="w3-content" >
+<img class="mySlides" src="fot.jpg" style="height:100px; width:1070px; margin-top:35px; ">
+<img class="mySlides" src="foot.jpg" style="height:100px; width:1070px; margin-top:35px; ">
+
+</div>
+</div>
+
+
+
+<div  id="aside" style="background-color: #a0bbae; height: 100%; width: 20%; float: right; padding: 5px; overflow: scroll; ">	
+
+<a onclick="mostrar(1)">Agencia de autos</a><br><br>
+<div id="1" class="oculto">
+<input type="radio" name="Alto" id="R-1N-05b4" onclick="R1N05b4()"> <label for="R-1N-05b4">Honda</label> <br/> 
+<input type="radio" name="Alto" id="R-1N-05b2" onclick="R1N05b2()"> <label for="R-1N-05b2">GM</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b5" onclick="R1N05b5()"> <label for="R-1N-05b5">Peugeot</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b3" onclick="R1N05b3()"> <label for="R-1N-05b3">Toyota</label> <br/>
+<input type="radio" name="Alto" id="R-1N-05b1" onclick="R1N05b1()"> <label for="R-1N-05b1">VW</label> <br/>
+</div>
+  
+<a onclick="mostrar(2)">Bancos</a><br><br>
+<div id="2" class="oculto">
+<input type="radio" name="Alto" id="PB-09b" onclick="fPB09b()"> <label for="PB-09b" >Banamex</label> <br/>
+<input type="radio" name="Alto" id="SA-N1-03A" onclick="SAN103A()"> <label for="SA-N1-03A" >Bancomer</label> <br/>
+<input type="radio" name="Alto" id="1N-48" onclick="f1N48()"> <label for="1N-48">Santander</label> <br/>
+</div>
+
+  <a onclick="mostrar(3)">Bienes Raíces</a><br><br>
+<div id="3" class="oculto">
+<input type="radio" name="Alto" id="Altozano" value="Altozano"> <label for="Altozano">Altozano la Nueva Morelia</label> <br/>
+</div>
+
+<a onclick="mostrar(4)">Cafetería y Heladeria</a><br><br>
+<div id="4" class="oculto">
+<input type="radio" name="Alto" id="1N-49a" onclick="f1N49a()"> <label for="1N-49a">El Globo</label> <br/>
+<input type="radio" name="Alto" id="1N-51" onclick="f1N51()"> <label for="1N-51">Nutrisa</label> <br/>
+<input type="radio" name="Alto" id="Starbucks" value="Starbucks"> <label for="Starbucks">Starbucks</label> <br/>
+</div>
+
+
+<a onclick="mostrar(5)">Calzado</a><br><br>
+<div id="5" class="oculto">
+<input type="radio" name="Alto" id="1N-47" onclick="f1N47()"> <label for="1N-47">Flexi</label> <br/>
+<input type="radio" name="Alto" id="1N-50A" onclick="f1N50A()"> <label for="1N-50A">Hill´s Collection</label> <br/>
+</div>
+
+
+    <a onclick="mostrar(6)">Deportes</a><br><br>
+<div id="6" class="oculto">
+<input type="radio" name="Alto" id="1N-43" onclick="f1N43()"> <label for="1N-43" >Dportenis</label> <br/>
+<input type="radio" name="Alto" id="PB-02" value="fPB02()"> <label for="PB-02">Marti</label> <br/>
+</div>
+    
+<a onclick="mostrar(7)">Entenimiento</a><br><br>
+<div id="7" class="oculto">
+<input type="radio" name="Alto" id="Cinemex" > <label for="Cinemex" onclick="Cinemex()">Cinemex</label> <br/>
+<input type="radio" name="Alto" id="PB-11b" onclick="fPB11b()"> <label for="PB-11b">Gamers</label> <br/>
+<input type="radio" name="Alto" id="1N-8" onclick="f1N8()"> <label for="1N-8">Jump it up</label> <br/>
+<input type="radio" name="Alto" id="SA-2N-01" onclick="fSA2N01()"> <label for="SA-2N-01">The Monkey</label> <br/>
+ </div>
+
+<a onclick="mostrar(8)">Hoteles</a><br><br>
+<div id="8" class="oculto">
+<input type="radio" name="Alto" id="Hotel" onclick="Hotel_Real()"> <label for="Hotel">Hotel Real Inn</label> <br/>
+</div>
+
+<a onclick="mostrar(9)">Jugueteria</a><br><br>
+<div id="9" class="oculto">
+<input type="radio" name="Alto" id="1N-19a" onclick="f1N19a()"> <label for="1N-19a">Distroller</label> <br/>
+<input type="radio" name="Alto" id="2N-06-07-08-09" onclick="f2N06070809()"> <label for="2N-06-07-08-09">Julio Cepeda Jugueteria</label> <br/>
+</div>
+
+<a onclick="mostrar(10)">Joyeria y Accesorios</a><br><br>
+<div id="10" class="oculto">
+<input type="radio" name="Alto" id="1N-62" onclick="f1N62()"> <label for="1N-62">Bizzarro</label> <br/>
+<input type="radio" name="Alto" id="1N-60" onclick="f1N60()"> <label for="1N-60">Crochet</label> <br/>
+<input type="radio" name="Alto" id="PB-06" onclick="fPB06()"> <label for="PB-06">Daniel Espinosa</label> <br/>
+</div>
+
+<a onclick="mostrar(11)">Libreria</a><br><br>
+<div id="11" class="oculto">
+<input type="radio" name="Alto" id="PB-08" onclick="fPB08()"> <label for="PB-08">Porrua</label> <br/>
+</div>
+
+<a onclick="mostrar(12)">Moda</a><br><br>
+<div id="12" class="oculto">
+<input type="radio" name="Alto" id="1N-4" onclick="f1N4()"> <label for="1N-4">Baby Upscale</label> <br/>
+<input type="radio" name="Alto" id="1N-78" onclick="f1N78()"> <label for="1N-78">Bobois</label> <br/>
+<input type="radio" name="Alto" id="1N-61" onclick="f1N61()"> <label for="1N-61">Intimissimi Calzedonia</label> <br/>
+<input type="radio" name="Alto" id="PB-02a" onclick="fPB02a()"> <label for="PB-02a">Fiorentina</label> <br/>
+<input type="radio" name="Alto" id="1N-17" onclick="f1N17()"> <label for="1N-17">LOB</label> <br/>
+<input type="radio" name="Alto" id="Adidas" value="Adidas" onclick=""> <label for="Adidas">Adidas Originals </label> <br/>
+<input type="radio" name="Alto" id="PB-16a" onclick="fPB16a()"> <label for="PB-16a">Adolfo Dominguez</label> <br/>
+<input type="radio" name="Alto" id="F21" onclick="Forever_21()"> <label for="F21">Forever 21</label> <br/>
+<input type="radio" name="Alto" id="PB-03" onclick="fPB03()"> <label for="PB-03">Guess</label> <br/>
+<input type="radio" name="Alto" id="HM" onclick="HM()"> <label for="HM">H&M</label> <br/>
+<input type="radio" name="Alto" id="1N-18" onclick="f1N18()"> <label for="1N-18">Ivonne</label> <br/>
+<input type="radio" name="Alto" id="1-N3" onclick="f1N3()"> <label for="1N-3">Marsel</label> <br/>
+<input type="radio" name="Alto" id="PB-01" onclick="fPB01()"> <label for="PB-01">Nicole Lee</label> <br/>
+<input type="radio" name="Alto" id="PB-07" onclick="fPB07()"> <label for="PB-07">Pepe Jeans</label> <br/>
+<input type="radio" name="Alto" id="1N-7" onclick="f1N7()"> <label for="1N-7">Piky Accesories</label> <br/>
+<input type="radio" name="Alto" id="PB-04-05" onclick="fPB0405()"> <label for="PB-04-05">Studio F</label> <br/>
+<input type="radio" name="Alto" id="PB-15" onclick="fPB15()"> <label for="PB-15">Tommy Hilfiger</label> <br/>
+</div>
+
+<a onclick="mostrar(13)">Restaurantes</a><br><br>
+<div id="13" class="oculto">
+<input type="radio" name="Alto" id="2N-25" onclick="f2N25()"> <label for="2N-25">Asador de Bariloche</label> <br/>
+<input type="radio" name="Alto" id="FC-08a" onclick="fFC08a()"> <label for="FC-08a">Burguer king</label> <br/>
+<input type="radio" name="Alto" id="2N-19-20-21" onclick="f2N192021()"> <label for="2N-19-20-21">Carl's Jr</label> <br/>
+<input type="radio" name="Alto" id="2N-14-15" onclick="f2N1415()"> <label for="2N-14-15">Comicx</label> <br/>
+<input type="radio" name="Alto" id="FC-10a" onclick="fFC10a()"> <label for="FC-10a">Domino's Pizza</label> <br/>
+<input type="radio" name="Alto" id="2N-33" onclick="f2N33()"> <label for="2N-33">Fisher's</label> <br/>
+<input type="radio" name="Alto" id="PB-17-18" onclick="fPB1718()"> <label for="PB-17-18">IHOP</label> <br/>
+<input type="radio" name="Alto" id="Gelato" value="Gelato"> <label for="Gelato">IL Gelato Di Luca</label> <br/>
+<input type="radio" name="Alto" id="Inn" value="Inn"> <label for="Inn">Inn Salata Express</label> <br/>
+<input type="radio" name="Alto" id="FC-09" onclick="fFC09()"> <label for="FC-09">La Cueva de Chucho</label> <br/>
+<input type="radio" name="Alto" id="PB-11" onclick="fPB11()"> <label for="PB-11">Lilian's Coffees</label> <br/>
+<input type="radio" name="Alto" id="Mingos" value="Mingos"> <label for="Mingos">Mingos</label> <br/>
+<input type="radio" name="Alto" id="2N-37" onclick="f2N37()"> <label for="2N-37">Texas Ribs</label> <br/>
+<input type="radio" name="Alto" id="2N-29" onclick="f2N29()"> <label for="2N-29">Unagi</label> <br/>
+</div>
+
+<a onclick="mostrar(14)">Salud y Belleza</a><br><br>
+<div id="14" class="oculto">
+<input type="radio" name="Alto" id="PB-09" onclick="fPB09()"> <label for="PB-09">Mac Cosmetics</label> <br/>
+<input type="radio" name="Alto" id="1N-51a" onclick="f1N51a()"> <label for="1N-51a">Ópticas Lux</label> <br/>
+<input type="radio" name="Alto" id="1N-50B" onclick="f1N50B()"> <label for="1N-50B">Ópticas Kauffman</label> <br/>
+<input type="radio" name="Alto" id="1N-" onclick="f1N4()"> <label for="1N-">Body Brite</label> <br/>
+</div>
+
+<a onclick="mostrar(15)">Servicios</a><br><br>
+<div id="15" class="oculto">
+<input type="radio" name="Alto" id="1N-26a" onclick="f1N26a()"> <label for="1N-26a">Capilla "María Inmaculada de la Salud"</label> <br/>
+<input type="radio" name="Alto" id="ETN" value="ETN"> <label for="ETN" onclick="myFunction1()">ETN</label> <br/>
+</div>
+
+<a onclick="mostrar(16)">Tecnologia</a><br><br>
+<div id="16" class="oculto">
+<input type="radio" name="Alto" id="Best_Buy" onclick="Best_Buy()"> <label for="Best_Buy">Best Buy</label> <br/>
+<input type="radio" name="Alto" id="PB-09a" onclick="fPB09a()"> <label for="PB-09a">Mac store</label> <br/>
+<input type="radio" name="Alto" id="1N-5A" onclick="f1N5A()"> <label for="1N-5A">Telcel</label> <br/>
+</div>
+
+<a onclick="mostrar(17)">Tiendas departamentales</a><br><br>
+<div id="17" class="oculto">
+<input type="radio" name="Alto" id="Liverpool" onclick="Liverpool()"> <label for="Liverpool">Liverpool</label><br/>
+<input type="radio" name="Alto" id="Sears" onclick="Sears()"> <label for="Sears">Sears</label> <br/>
+</div>
+
+
+
+</div>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>
+ function autoRefresh_div()
+ {
+      $("#section").load("load.html");// a function which will load data from other file after x seconds
+  }
+ 
+  setInterval('autoRefresh_div()', 5000); // refresh div after 5 secs
+            </script>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function cambiar() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "serviciospb.png";
+  document.getElementById('capa3').src = " ";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+ }
+ function cambiar1() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+ document.getElementById('capa3').src = " ";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+ }
+ function cambiar2() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "serviciosn2.png";
+ document.getElementById('capa3').src = " ";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+ }
+
+
+ function f1N3() {
+ 	document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-3.png";
+ }
+ function f1N4() {
+ 	 document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-4.png";
+ }
+ function f1N5A() {
+ 	 document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-5A.png";
+ }
+ function f1N6A() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-6A.png";
+ }
+ function f1N7() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-7.png";
+ }
+
+  function f1N8() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-8.png";
+ }
+ function f1N17() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-17.png";
+ }
+ function f1N18() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-18.png";
+ }
+ function f1N19a() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-19a.png";
+ }
+ function f1N26a() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-26a.png";
+ }
+
+  function f1N43() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-47.png";
+ }
+  function f1N47() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-47.png";
+ }
+ function f1N48() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-48.png";
+ }
+ function f1N49a() {
+   document.getElementById('capa1').src = "fondon1.png";
+   document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-49a.png";
+ }
+ function f1N50A() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-50A.png";
+ }
+ function f1N50B() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-50B.png";
+ }
+
+  function f1N51() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-51.png";
+ }
+ function f1N51a() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-51a.png";
+ }
+ function f1N60() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-60.png";
+ }
+ function f1N61() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-61.png";
+ }
+ function f1N62() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-62.png";
+ }
+
+  function f1N63() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-63.png";
+ }
+ function f1N64() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-64.png";
+ }
+ function f1N66() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/1N-66.png";
+ }
+ function f1N78() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/1N-78.png";
+ }
+ function Best_Buy() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/Best_Buy.png";
+ }
+
+  function Forever_21() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/Forever_21.png";
+ }
+ function HM() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/H&M.png";
+ }
+ function Hotel_Real() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/Hotel_Real_Inn.png";
+ }
+ function Liverpool() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/Liverpool.png";
+ }
+ function R1N05b1() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/R-1N-05b1.png";
+ }
+
+  function R1N05b2() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/R-1N-05b2.png";
+ }
+ function R1N05b3() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/R-1N-05b3.png";
+ }
+ function R1N05b4() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/R-1N-05b4.png";
+ }
+ function R1N05b5() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/R-1N-05b5.png";
+ }
+ function SAN103A() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/SA-N1-03A.png";
+ }
+
+  function Sanborns() {
+  document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+   document.getElementById('capa3').src = "png_altozano/Sanborns.png";
+ }
+ function Sears() {
+   document.getElementById('capa1').src = "fondon1.png";
+  document.getElementById('capa2').src = "new/serviciosn1.png";
+  document.getElementById("lbl1").innerText = "<-Estas";
+  document.getElementById("lbl1.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano/Sears.png";
+ }
+
+ function f2N01() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-01.png";
+ }
+
+ function f2N06070809() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-06-07-08-09.png";
+ }
+
+ function f2N1415() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-14-15.png";
+ }
+
+function f2N192021() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-19-20-21.png";
+ }
+
+
+function f2N25() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-25.png";
+ }
+
+
+function f2N29() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-29.png";
+ }
+
+function f2N33() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-33.png";
+ }
+
+
+function f2N37() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/2N-37.png";
+ }
+
+function Cinemex() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/Cinemex.png";
+ }
+
+function fFC08a() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/FC-08a.png";
+ }
+
+function fFC09() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/FC-09.png";
+ }
+
+function fFC10a() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/FC-10a.png";
+ }
+
+function fSA2N01() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/SA-2N-01.png";
+ }
+
+function fTC05() {
+  document.getElementById('capa1').src = "fondon2.png";
+  document.getElementById('capa2').src = "new/serviciosn2.png";
+  document.getElementById("lbl2").innerText = "<-Estas";
+  document.getElementById("lbl2.1").innerText = "aqui";
+  document.getElementById("lbl").innerText = "";
+  document.getElementById("lbl.1").innerText = "";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_n2/TC-05.png";
+ }
+
+
+ function fPB01() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-01.png";
+ }
+
+  function fPB02() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-02.png";
+ }
+
+  function fPB02a() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-02a.png";
+ }
+
+  function fPB03() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-03.png";
+ }
+
+  function fPB0405() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-04-05.png";
+ }
+
+  function fPB06() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-06.png";
+ }
+
+   function fPB07() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-07.png";
+ }
+
+   function fPB08() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-08.png";
+ }
+
+   function fPB09() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-09.png";
+ }
+
+   function fPB09a() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-09a.png";
+ }
+
+   function fPB09b() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-09b.png";
+ }
+
+
+  function fPB11() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-11.png";
+ }
+
+   function fPB11b() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-11b.png";
+ }
+
+   function fPB1213() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-12-13.png";
+ }
+
+   function fPB15() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-15.png";
+ }
+
+   function fPB16a() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-16a.png";
+ }
+
+   function fPB1718() {
+  document.getElementById('capa1').src = "fondpb.png";
+  document.getElementById('capa2').src = "new/serviciospb.png";
+  document.getElementById("lbl").innerText = "<-Estas";
+  document.getElementById("lbl.1").innerText = "aqui";
+  document.getElementById("lbl1").innerText = "";
+  document.getElementById("lbl1.1").innerText = "";
+  document.getElementById("lbl2").innerText = "";
+  document.getElementById("lbl2.1").innerText = "";
+  document.getElementById('capa3').src = "png_altozano_pb/PB-17-18.png";
+ }
+
+ var visto = null;
+function mostrar(num) {
+  obj = document.getElementById(num);
+  obj.style.display = (obj==visto) ? 'none' : 'block';
+  if (visto != null)    
+    visto.style.display = 'none';
+  visto = (obj==visto) ? null : obj;
+}
+
+</script>
+
+
+ 
+</body>
+</html>
